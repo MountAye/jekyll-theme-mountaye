@@ -1,0 +1,22 @@
+global:
+  title: 阿掖山
+  description: 智力活动是一种生活态度
+titles:
+  index:   一个博客
+  history: 日期归档
+  topics:  话题归档
+  notfound: 404 错误
+# topics: 
+#   doc:   随笔散文
+#   md:    IT类业余笔记
+#   jpg:   摄影和后期心得
+#   tex:   科学类说明文
+#   py:    Python学习笔记
+#   ai:    机器学习和人工智能
+#   zip:   读书·看片·玩游戏
+#   ihsil: 高皋、严家其《文化大革命十年史》笔记
+#   mpipks-note:       马普所·非平衡态统计·笔记
+#   mpipks-transcript: 马普所·非平衡态统计·语音转录
+#   html:  转载和二次创作
+#   inter: 翻译
+#   rss:   如是我闻

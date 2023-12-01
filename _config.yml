@@ -1,0 +1,27 @@
+url:          ""
+baseurl_root: ""
+baseurl:      ""
+permalink:    "/articles/:title"
+author:       ""
+exclude: ["Gemfile","Gemfile.lock","README.md","jekyll-mountaye.gemspec"]
+plugins:
+  - jekyll-feed
+  - jekyll-sass-converter
+  - jekyll-multiple-languages-plugin
+languages: [zh-CN, en]
+language_names:
+  zh-CN: 简体中文
+  en:    English
+exclude_from_localizations: ["favicon.ico","assets","jekyll-mountaye.gemspec","_sass"]
+social:
+  - github:  ""
+  - twitter: ""
+  - email:   ""
+# tokens:
+#   - giscus: 
+#       repo:        ""
+#       repo_id:     ""
+#       category:    ""
+#       category_id: ""
+#   - google-analytics: ""
+#   - google_ads: ""

@@ -1,0 +1,23 @@
+global:
+  title: "MountAye"
+  description: Intellectual pursuits constitute a way of life.
+titles:
+  index:   A Blog
+  history: History
+  topics:  Topics
+  notfound: 404 Error
+# topics: 
+#   doc:   Random thoughts
+#   md:    Notes on information technology
+#   jpg:   Camera and photography
+#   tex:   Scientific outreach
+#   py:    Notes on Python
+#   ai:    Machine learning and artificial intelligence
+#   zip:   Books, TVs, movies, games
+#   ihsil: Notes on "Ten years of Great Cultural Revolution"
+#   mpipks-note:       Notes of non-equilibrium statistics 
+#   mpipks-transcript: Transcripts of non-equilibrium statistics 
+#   html:  Repost and modification
+#   inter: Translation
+#   rss:   News as far as I heard
+  

@@ -1,0 +1,292 @@
+  .written {
+    line-height: 1.6;
+    letter-spacing: .034em;
+    word-break: all;
+  }
+  
+  .written p {
+    padding-top:    0.75em;
+    padding-bottom: 0.25em;
+    line-height:    1.6em;
+  }
+  
+  /* 一级标题 */
+  .written h1 {
+    font-size: 1.6rem;
+    color: black;
+    line-height: 2em;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+  }
+  
+  /* 一级标题修饰 请参考有实例的主题 */
+  .written h1:before {
+    content: "";
+    display: inline-block;
+    margin-bottom:-0.1em;
+    width: 1em;
+    height: 1em;
+    background-image:url($baseurl + "/assets/img/before_h1.png");
+    background-size: cover;
+  }
+   
+  /* 二级标题 */
+  .written h2 {
+    display:block;
+    font-size:1.3rem;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    line-height: 1.8em;
+    color: rgb(60, 112, 198);
+  }
+  
+  /*二级标题伪元素*/
+  .written h2:before {
+    content: "";
+    display: inline-block;
+    margin-bottom:-0.1em;
+    margin-right: 0.5rem;
+    width: 1em;
+    height: 1em;
+    background-image:url($baseurl + "/assets/img/before_h2.png");
+    background-size: cover;
+  }
+  
+  /* 三级标题 */
+  .written h3 {
+    display:inline-block;
+    font-size: 1.125rem;
+    font-weight: bold;
+    line-height: 1.75em;
+    color:rgb(60,112,198);
+    padding-top: 1em;
+  }
+  
+  /* 三级标题 */
+  .written h3:before {
+    content: "";
+    display: inline-block;
+    margin-bottom:-0.1em;
+    margin-right: 0.5rem;
+    width: 1em;
+    height: 1em;
+    background-image:url($baseurl + "/assets/img/before_h3.png");
+    background-size: cover;
+  }
+  
+  /* 列表内容 */
+  .written li {
+    list-style-position: inside;
+    margin-left: 1em;
+  }
+  
+  /* 引用
+   * 左边缘颜色 border-left-color:black;
+   * 背景色 background:gray;
+   */
+  .written blockquote {
+    margin: 8px 10px 8px 10px ;
+    padding: 7px 10px 7px 10px;
+    line-height: 27px;
+    background-color: rgb(239, 239, 239);
+    border-left:none;
+    display:block;
+  }
+  
+  /* 引用文字 */
+  .written blockquote p {
+    padding: 0px;
+    color:rgb(89,89,89);
+  }
+  
+  /* 链接 */
+  .written a {
+    color: rgb(60, 112, 198);
+    text-decoration:none;
+    border-bottom: 1px solid rgb(60, 112, 198);
+  }
+  
+  /* 加粗 */
+  .written strong {
+    line-height: 1.75em;
+    color: rgb(74,74,74);
+  }
+  
+  /* 斜体 */
+  .written em {
+    text-decoration: underline;
+  }
+  
+  /* 加粗斜体 */
+  .written em strong {
+    color:rgb(248,57,41);
+    letter-spacing:0.3em;
+  }
+  
+  /* 删除线 */
+  .written del {
+  }
+   
+  /* 分割线 */
+  .written hr {
+    height:1px;
+    margin-top: 0.75em;
+    padding:0;
+    border:none;
+    text-align:center;
+    background-image:linear-gradient(to right,rgba(60,122,198,0),rgba(60,122,198,0.75),rgba(60,122,198,0));
+  }
+  
+  /* 图片 */
+  .written img {
+      border-radius:4px;
+      margin-top:    10px;
+      margin-bottom: 25px;
+      width: 98%;
+  }
+  
+  /* 图片描述文字 */
+  .written figcaption {
+    display:block;
+    font-size:12px;
+    font-family:PingFangSC-Light;
+  }
+  
+  /* 行内代码 */
+  .written p code, .written li code {
+    margin:    0 2px;
+    padding: 2px 4px;
+    border-radius: 4px;
+    background-color: rgba(27, 31, 35, 0.05);
+    color: rgb(60, 112, 198);;
+    font-family: Operator Mono, Consolas, Monaco, Menlo, monospace;
+    font-size: 0.875em;
+    word-break: break-all;
+  }
+  
+  /* 非微信代码块
+   * 代码块不换行 display:-webkit-box !important;
+   * 代码块换行 display:block;
+   */
+  .written pre {
+    margin-top: 0.375rem;
+    padding: 0.625rem;
+    padding-bottom: calc(0.625rem + 1em);
+    border-radius: 4px;
+    background-color: rgba(27, 31, 35, 0.05);
+    overflow-x: scroll;
+    code {
+      color: #383a42;
+      font-family: Operator Mono, Consolas, Monaco, Menlo, monospace;
+      font-size: 0.9em;
+    }
+  }
+  /* 表格内的单元格
+   * 字体大小 font-size: 16px;
+   * 边框 border: 1px solid #ccc;
+   * 内边距 padding: 5px 10px;
+   */
+  .written table tr th,
+  .written table tr td {
+    font-size: 14px;
+  }
+  
+  .written .footnotes{
+    padding-top: 8px;
+  }
+  
+  /* 脚注文字 */
+  .written .footnote-word {
+    color: rgb(60, 112, 198);
+  }
+  
+  /* 脚注上标 */
+  .written .footnote-ref {
+    color: rgb(60, 112, 198);
+  }
+  
+  /* 脚注超链接样式 */
+  .written .footnote-item em {
+    color: rgb(60, 112, 198);
+    font-size:13px;
+    font-style:normal;
+    border-bottom:1px dashed rgb(60, 112, 198); 
+  }
+  
+  /* "参考资料"四个字 
+   * 内容 content: "参考资料";
+   */
+  .written .footnotes-sep:before {
+    background-image: none;
+    display: block;
+    width: auto;
+    height: auto;
+  }
+  
+  /* 参考资料编号 */
+  .written .footnote-num {
+    color: rgb(60, 112, 198);
+  }
+  
+  /* 参考资料文字 */
+  .written .footnote-item p {
+    color: rgb(60, 112, 198);
+    font-weight:bold;
+  }
+  
+  /* 参考资料超链接 */
+  .written .footnote-item a {
+    color:rgb(60, 112, 198);
+  }
+  
+  /* 参考资料解释 */
+  .written .footnote-item p em {
+    font-size:14px;
+    font-weight:normal;
+    border-bottom:1px dashed rgb(60, 112, 198);
+  }
+  
+  /* 行间公式
+   * 最大宽度 max-width: 300% !important;
+   */
+  .written .block-equation svg {
+    
+  }
+  
+  /* 行内公式*/
+  .written .inline-equation svg {  
+  }
+  
+  /* 滑动图片
+   */
+  .written .imageflow-img {
+    display: inline-block;
+    width:100%;
+    margin-bottom: 0;
+  }
+
+  // from jekyll-leap-day
+  table {
+    margin: 1em 0;
+    width:100%;
+    border-collapse:collapse;
+  }
+  
+  th {
+    text-align:left;
+    padding:5px 10px;
+    border-bottom:1px solid #e5e5e5;
+    color: #444;
+  }
+  
+  td {
+    text-align:left;
+    padding:5px 10px;
+    border-bottom:1px solid #e5e5e5;
+    border-right: 1px solid #ffcc00;
+  
+    &:first-child {
+      border-left: 1px solid #ffcc00;
+    }
+  }
+  
