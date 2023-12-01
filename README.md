@@ -7,3 +7,8 @@ Please checkout the [i18n](https://github.com/MountAye/jekyll-theme-mountaye/tre
 ## To Do
 
 - [ ] Make single-language version
+
+## Known Issues
+
+- Scrollbars refuse to be invisible, and annoying shadows from them.
+ 
