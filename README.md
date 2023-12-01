@@ -10,5 +10,5 @@ Please checkout the [i18n](https://github.com/MountAye/jekyll-theme-mountaye/tre
 
 ## Known Issues
 
-- Scrollbars refuse to be invisible, and annoying shadows from them.
+- On Safari desktop, scrollbars refuse to be invisible, and annoying shadows from them.
  
