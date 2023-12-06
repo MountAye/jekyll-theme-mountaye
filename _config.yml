@@ -1,0 +1,22 @@
+url:          ""
+baseurl:      ""
+title:        ""
+author:       "Someone"
+description:  ""
+permalink:    "/articles/:title"
+exclude: ["Gemfile","Gemfile.lock","README.md","jekyll-mountaye.gemspec"]
+plugins:
+  - jekyll-feed
+  - jekyll-sass-converter
+social:
+  github:  ""
+  twitter: ""
+  email:   ""
+# tokens:
+#   giscus: 
+#     repo:        ""
+#     repo_id:     ""
+#     category:    ""
+#     category_id: ""
+#   google-analytics: ""
+#   google_ads: ""

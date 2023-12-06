@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="{{ site.lang }}" class="scrollbar-hidden">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    {% include seo.html %}
+    {% include google_analytics.html %}
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
+    <script src="{{ site.baseurl }}/assets/js/main.js"></script>
+  {% if page.hasMath %}  
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  {% endif %}  
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  </head>
+  <body>
+    <div id="layout-all">
+      <aside id="layout-left">
+        <a class="left-avatar"
+           href="{{ site.url }}{{ site.baseurl }}/"
+        >
+          <div id="avatar"></div>
+          <div id="sitename">{{ site.title }}</div>
+        </a>
+        <div class="left-quote">
+          <div class="fade-out-left"></div>
+          <div class="side-vertical scrollbar-hidden">
+            <p><span id="quote-line">智力活动是一种生活态度</span></p> <!-- This id is used by js --> 
+            <p>——<span id="quote-author">阿掖山·一个博客</span></p>   <!-- This id is used by js --> 
+          </div>
+        </div>
+        <footer class="left-footer side-vertical">
+          <div id="social-icons">
+            <a href="{{ site.baseurl }}/feed.xml" class="icon-Popular_RSS"></a>
+            <a href="{{ site.social.github  }}" class="icon-Popular_GitHub"></a>
+            <a href="{{ site.social.twitter }}" class="icon-Popular_Twitter"></a>
+            <a href="{{ site.social.email   }}" class="icon-Popular_mail" style="font-size: 13px;"></a>
+          </div>
+          <p>{{ site.title }} &copy; {{ "now" | date: "%Y" }}
+          <br>Rights Reserved
+          <br>Theme by <a href="https://www.github.com/MountAye" style="font-size: inherit; text-decoration: none; color: #3C70C6;">MountAye</a></p>
+        </footer>
+      </aside> 
+      <div id="layout-mid">
+        <header id="header"> <!-- This id is used by js --> 
+          <h1 id="header-title">{{ page.title }}</h1>
+          <div id="toc-button" class="changable-icon" onclick="tocButton(this)">
+            <div class="bar1"></div><div class="bar2"></div><div class="bar3"></div>
+          </div>
+          <div id="toc-dropdown-container" class="dropdown-content">
+            <div id="toc-dropdown"><!-- This id is used by js --></div> 
+          </div>
+        </header>
+      {% if page.date %}
+        <div id="title-banner" class="written">
+          {% for tag in page.tags %}<code>{{ tag }}</code>{% endfor %}
+          <h1>{{ page.title }}</h1>
+          <div id="author-card">
+            <div id="author-avatar" style='background-image: url("{% if page.author %}{{ site.data.authors[page.author].avatar }}{% else %}{{ site.baseurl }}/assets/img/before_h2.png{% endif %}");'></div>
+            <div id="author-texts">
+              <p><strong>{% if page.author %}{{ page.author }}{% else %}{{ site.author }}{% endif %}</strong></p>
+              <p>{{ page.date | date: "%b %-d, %Y" }}</p>
+            </div>
+          </div>
+          <hr>  
+        </div>
+      {% endif %}
+        {{ content }}
+    </div>
+      <aside id="layout-right">
+        <div id="right-top">
+          {% if page.right_panel %}{% include {{ page.right_panel }} %}{% else %}{% include toc.html %}{% endif %}
+        </div>
+        <div id="right-bottom">
+          <div id="right-nav-container">
+            <a class="right-nav-button" href="{{ site.url }}{{ site.baseurl }}/history">
+              <span class="material-symbols-outlined">calendar_month</span>
+              <span class="right-nav-text">History</span>
+            </a>
+            <a class="right-nav-button" href="{{ site.url }}{{ site.baseurl }}/topics" >
+              <span class="material-symbols-outlined">bookmarks</span>
+              <span class="right-nav-text">Topics</span>
+            </a>
+          </div>
+        </div>
+      </aside>
+    </div>
+    <footer id="nav-mobile"> <!-- This id is used by js -->
+      <a class="nav-mobile-item" href="{{ site.url }}{{ site.baseurl }}/history">
+        <span class="material-symbols-outlined">calendar_month</span>
+      </a>
+      <a class="nav-mobile-item" href="{{ site.url }}{{ site.baseurl }}/topics" >
+        <span class="material-symbols-outlined">bookmarks</span>
+      </a>
+      <a class="nav-mobile-item" href="{{ site.url }}{{ site.baseurl }}/"><div class="nav-mobile-avatar"></div></a>
+      <a class="nav-mobile-item" href=""></a>
+      <a class="nav-mobile-item" href=""></a>
+    </footer>
+  </body>
+</html>

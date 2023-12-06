@@ -2,8 +2,8 @@
 
 Yet another Jekyll template, made and used by MountAye. See the example site at https://mountaye.github.io/blog/
 
-Please checkout the [i18n](https://github.com/MountAye/jekyll-theme-mountaye/tree/i18n) branch, which ships with internationalization. 
+If you'd like the internationalization support, please checkout the [i18n](https://github.com/MountAye/jekyll-theme-mountaye/tree/i18n) branch.
 
-## To Do
+## Known issues
 
-- [ ] Make single-language version
+- On some Safari, dirty shadows show up next to random quotes and table of contents. Tried a lot of CSS styles to get rid of them, but no luck.
