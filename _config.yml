@@ -2,7 +2,7 @@ url:          ""
 baseurl_root: ""
 baseurl:      ""
 permalink:    "/articles/:title"
-author:       ""
+author:       "Someone"
 exclude: ["Gemfile","Gemfile.lock","README.md","jekyll-mountaye.gemspec"]
 plugins:
   - jekyll-feed
@@ -14,14 +14,14 @@ language_names:
   en:    English
 exclude_from_localizations: ["favicon.ico","assets","jekyll-mountaye.gemspec","_sass"]
 social:
-  - github:  ""
-  - twitter: ""
-  - email:   ""
+  github:  ""
+  twitter: ""
+  email:   ""
 # tokens:
-#   - giscus: 
-#       repo:        ""
-#       repo_id:     ""
-#       category:    ""
-#       category_id: ""
-#   - google-analytics: ""
-#   - google_ads: ""
+#   giscus: 
+#     repo:        ""
+#     repo_id:     ""
+#     category:    ""
+#     category_id: ""
+#   google-analytics: ""
+#   google_ads: ""

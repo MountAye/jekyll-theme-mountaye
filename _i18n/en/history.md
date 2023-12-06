@@ -1,9 +1,9 @@
 <div id="title-banner" class="written">
   <h1>{% t page.title %}</h1>
-  <hr>  
 </div>
 <div class="written">
 {% for post in site.posts %}
+  <hr>
   <a href="{{ post.url | prepend:site.baseurl }}"
      style="margin: 1rem 0; width: 100%; display: block; color: inherit; text-decoration: none; border-bottom: transparent;"
   >

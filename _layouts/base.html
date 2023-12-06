@@ -43,7 +43,7 @@
       </aside> 
       <div id="layout-mid">
         <header id="header"> <!-- This id is used by js --> 
-          <h1 id="header-title">{% if page.namespace %}{% t global.title %} | {% t page.title %}{% else %}{% t global.title %}{{ page.title }}{% endif %}</h1>
+          <h1 id="header-title">{% if page.namespace %}{% t global.title %} | {% t page.title %}{% else %}{{ page.title }}{% endif %}</h1>
           <div id="toc-button" class="changable-icon" onclick="tocButton(this)">
             <div class="bar1"></div><div class="bar2"></div><div class="bar3"></div>
           </div>
